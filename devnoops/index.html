@@ -8,9 +8,10 @@
 </html> 
 
 <script>
-    fetch('/home/tad/Documents/GitHub/TadMaj.github.io/devnoops/content.html')
+    fetch('https://raw.githubusercontent.com/TadMaj/TadMaj.github.io/main/devnoops/content.html')
         .then(response => response.text())
         .then(html => {
+            html = html.replaceAll("Increment", '+1');
             document.open();
             document.write(html);
             document.close();
