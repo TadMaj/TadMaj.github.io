@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Increment Button</title>
+    <script>
+        function incrementValue() {
+            var value = parseInt(document.getElementById('counter').innerHTML);
+            value++;
+            document.getElementById('counter').innerHTML = value;
+        }
+    </script>
+</head>
+<body>
+    <h1>Increment Button</h1>
+    <p>Value: <span id="counter">0</span></p>
+    <button onclick="incrementValue()">Increment</button>
+</body>
+</html>

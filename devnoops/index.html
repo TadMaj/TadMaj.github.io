@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1>Loading</h1>
+
+</body>
+</html> 
+
+<script>
+    fetch('/home/tad/Documents/GitHub/TadMaj.github.io/devnoops/content.html')
+        .then(response => response.text())
+        .then(html => {
+            document.open();
+            document.write(html);
+            document.close();
+        })
+        .catch(error => {
+            console.error('Error loading HTML file:', error);
+        });
+</script>
